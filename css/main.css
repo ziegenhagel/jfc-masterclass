@@ -293,6 +293,7 @@ h1, h2 {
 
 #header h1 {
   margin: 0;
+  font-size: 1.9em;
   padding: 0;
 }
 
@@ -326,7 +327,7 @@ p {
   text-align: center;
 }
 
-p, h1, h2, h3, h2::after {
+p, h1, h2, h3, h2::after, div {
   width: 800px;
   max-width: 90%;
   padding: .5rem;
@@ -342,7 +343,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 section#header {
@@ -370,7 +371,7 @@ section#schauspiel {
 }
 
 
-section#bildgestaltung {
+section#infos {
   background-image: url("https://jugendfilm.camp/images/banner/paralax_laenger.jpg");
 }
 
@@ -413,23 +414,19 @@ section#bildgestaltung {
 .dozent {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 320px;
   border-radius: 10px;
-  overflow: hidden;
   transition: .2s;
 }
 
 .dozent:hover {
-  transform: scale(1.1);
 }
 
 .dozent img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  margin: auto;
+  text-align: center;
+  display: block;
 }
 
 .doz-name {
@@ -476,7 +473,7 @@ footer .col {
   color: #fff7;
 }
 
-footer a {
+a {
   color: var(--color-primary);
 }
 
@@ -506,3 +503,27 @@ footer a {
   }
 
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.cols {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+.cols > div img {
+  margin-bottom: 15px;
+}
+
+.cols > div {
+  flex: 1;
+  padding: 1em;
+  color: #fff7;
+  text-align: center;
+  font-size: 1em;
+}
+
