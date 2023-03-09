@@ -525,21 +525,40 @@ html {
   margin: 1em 0;
 }
 
+
 @media (max-width: 992px) {
   .cols {
     flex-direction: column;
   }
+
   img.gallery {
     display: none;
   }
+
   .dozent {
-    width:180px;
-    height: auto;
+    width: 180px;
+    height: 260px;
+    max-width: 100%;
+    align-items: flex-start;
   }
+
   .cols > div {
     display: flex;
     flex-direction: column;
     font-size: inherit;
+  }
+
+
+  .dozent div.doz-foto, .dozent {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  div.dozent {
+    width: 150px;
   }
 }
 
