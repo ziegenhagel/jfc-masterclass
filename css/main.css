@@ -525,6 +525,19 @@ html {
   margin: 1em 0;
 }
 
+@media (max-width: 992px) {
+  .cols {
+    flex-direction: column;
+  }
+  img.gallery {
+    display: none;
+  }
+  .dozent {
+    width:180px;
+    height: auto;
+  }
+}
+
 .cols > div img {
   margin-bottom: 15px;
 }
