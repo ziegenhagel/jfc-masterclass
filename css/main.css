@@ -536,6 +536,11 @@ html {
     width:180px;
     height: auto;
   }
+  .cols > div {
+    display: flex;
+    flex-direction: column;
+    font-size: inherit;
+  }
 }
 
 .cols > div img {
